@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://podoit.com/sitemap.xml

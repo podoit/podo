@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+
+    <!-- about -->
+    <title>포도IT</title>
+    <meta name="description" content="안녕하세요 포도IT입니다">
+    <link rel="canonical" href="https://podoit.com">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="fontawesome5/css/all.css">
+
+    <!-- opengraph -->
+    <meta property="og:url" content="https://podoit.com">
+    <meta property="og:title" content="포도IT">
+    <meta property="og:description" content="안녕하세요 포도IT입니다">
+    <meta property="og:image" content="img/og-image.png">
+    
+    <!-- include -->
+    <script src="js/includeHTML.js"></script>
+
+    <!-- jquery -->
+    <script src="jquery/jquery-3.5.1.js"></script>
+
+    <!-- owl-carousel -->
+    
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="owl-carousel/owl-carousel.css">
+    <!-- Yeah i know js should not be in header. Its required for demos.-->
+    <script src="jquery/jquery-3.5.1.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNX4SNC4V9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NNX4SNC4V9');
+    </script>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ebe37d8f0b1e4cb"></script>
+    
+</head>
+<body>
+
+    <style>
+    .bg-image {
+    background-image:url('img/city-nightview.jpg');
+    background-size:cover;
+    background-position:center;
+    height:600px;
+    position: relative;
+    }
+
+    .podo-subject {position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
+    color:white}
+    .podo-subject .btn {color:white;opacity:1}
+    .podo-subject .btn:hover {opacity:.8}
+
+    .podo-logo-image {width:100px;}
+    .podo-logo img {position:absolute;top:0;left:0}
+    </style>
+
+
+
+
+
+<div class="bg-image">
+    <div class="podo-subject">
+        <h1 style="font-size:30px">최신 웹기술에 기반한 IT스타트업, <img class="podo-logo-image" src="img/PODO.png" alt="">입니다</h1>
+        <p style="font-size:16px" id="demo"></p>
+        <br>
+        <!-- <a class="btn" href="https://drive.google.com/file/d/1H3isuVkzmjGWXFDjRwNFzE8TL-P-JwNS/view?usp=sharing" target="_blank" rel="noopener noreferrer">신청서 다운로드</a> -->
+    </div>
+</div>
+
+<script>
+    var myTimer = setInterval(myClock, 1000);
+    function myClock() {
+      document.getElementById("demo").innerHTML = new Date().toLocaleTimeString();
+    }
+</script>
+
+<!-- navigation -->
+<nav id="navbar">
+    <div class="">
+        <a href="tel:010-5110-6782" class="podo-call"><i class="fas fa-phone-alt"></i></a>
+        <a href="#" class="podo-logo">홈</a>
+        <a href="#pd-about">개요</a>
+        <a href="#pd-our-services">제작안내</a>
+        <a href="#pd-contact-us">연락하기</a>
+    </div>
+</nav>
+
+
+
+<!-- about -->
+<div class="row pd-about" id="pd-about">
+    <img src="img/asc2.png" alt="">
+    <div class="inline-block">
+        <h2>무엇을 위해.</h2>
+        <p>본격적인 사업 시작에 있어 웹환경의 구축이 필수가 된 시대, 우리는 4차 산업시대에 살고 있습니다.
+        통계에 따르면 약 80%의 사람들이 홈페이지를 가진 회사에 대해 더욱 신뢰한다고 하는군요.
+        고객들이 부담없이 우리 회사에 대한 다양한 정보를 접하기 위해서, 웹의 역할은 더 커지고 있습니다.
+        그렇다면, 어디서 웹서비스 제작을 의뢰해야할까요? 포도 IT는 다음의 가치를 추구합니다.</p>
+        <br>
+        <p><i class="fas fa-check"></i> 합리적인 당신같은 합리적인 서비스</p>
+        <p><i class="fas fa-check"></i> 유행을 따르지 않는 오래가는 서비스</p>
+        <p><i class="fas fa-check"></i> 고객의 상품에 최적화된 맞춤형 레이아웃 제작</p>
+        <p><i class="fas fa-check"></i> 웹개발 그 이상을 넘어, 고객의 지속적인 파트너로</p>
+    </div>
+</div>
+
+<!-- boss say -->
+<!-- <br><br>
+<div class="row pd-boss">
+    <img src="img/boss.jpeg" alt="">
+    <div class="inline-block">
+        <h3>Temin Jin</h3>
+        <code style="color:grey">Developer, Founder</code><br>
+        <p></p>
+        <cite>"안녕하세요! 포도 IT는 스타트업답게 가장 최신의 웹기술을 적용하여 사용하기 편리하고 합리적인 가격의 웹서비스를 제작합니다.
+        단순한 제품 제공을 넘어 고객에게 더 높은 차원의 웹환경을 경험시켜드리기 위해 노력하겠습니다. 홈페이지를 방문해주셔서 감사합니다!"</cite>
+    </div>
+</div> -->
+
+
+<!-- our services -->
+<div class="row pd-our-services" id="pd-our-services">
+    <div class="max-width-1200">
+        <h1 class="divider">제작 안내</h1>
+
+        <div class="inline-block">
+            <div class="">
+                <i class="fas fa-search-dollar" style="font-size:50px"></i>
+            </div>
+            
+            <h3>매월 청구비용 없음.</h3>
+            <p>매월 이용료를 청구하는 CMS시스템과 달리, 한번 제작 후 평생 무료 사용. </p>
+        </div>
+
+        <div class="inline-block">
+            <div class="">
+                <img style="width:150px" src="img/company-logo/netlify-logo.svg" alt="">
+            </div>
+            
+            <h3>호스팅</h3>
+            <p>안전하며 뛰어난 서비스를 제공하는 샌프란시스코 기반의 넷리파이의 호스팅 서비스 이용(스탠다드) </p>
+        
+        </div>
+
+        <div class="inline-block">
+            <div class="">
+                <i class="fas fa-palette" style="font-size:50px"></i>
+            </div>
+            <h3>아름다운 디자인</h3>
+            <p>사업의 얼굴이라고 할 수 있는 홈페이지의 미적 중요성을 위해</p>
+        </div>
+
+        
+
+        <div class="inline-block">
+            <div class="">
+                <img style="width:100px" src="img/company-logo/php-logo.svg" alt="">
+            </div>
+            <h3>개발 언어</h3>
+            <p>웹페이지 제작에 최적화된 프로그래밍 언어이자 전세계에서 가장 인기있는 언어, Php로 제작(PRO) </p>
+        </div>
+
+        <div class="inline-block">
+            <div class="">
+                <img style="width:50px" src="img/company-logo/chrome-logo.svg" alt="">
+            </div>
+            <h3>브라우저</h3>
+            <p>지원 중단을 앞둔 Internet Explorer기반 웹페이지 제작의 한계, 완벽한 브라우저로 평가받는 크롬 기반의 개발.</p>
+        </div>
+
+        <div class="inline-block">
+            <div class="">
+                <img style="width:125px" src="img/company-logo/analytics-logo.png" alt="">
+            </div>
+            <h3>API 서비스</h3>
+            <p>구글 통계 시스템, 구글 지도 등 구글웹 Technology 적용. </p>
+        </div>
+    </div>
+</div>
+
+<!-- Youtube video -->
+<div class="row youtube-container">
+    <h1>구글 통계의 적용사례 <i class="fas fa-video"></i></h1>
+    <div class="youtube">
+        <div class="embed-youtube">
+            <iframe width="1329" height="717" src="https://www.youtube.com/embed/9NUiqIF9jwo" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+
+<!-- pricing table -->
+<div class="row pd-table">
+    <div class="inline-block"> 
+        <ul>
+            <h1><span style="font-size:18px;font-weight:bold;background:deepskyblue;color:white;padding:0 2px">인기!</span> &nbsp;STANDARD</h1>
+            <p style="margin-bottom:25px;font-style: oblique;">컴팩트한 단일페이지, 내용 수정도 스스로 !</p>
+
+            <li>반응형</li>
+            <li>간단한 콘텐츠 수정 절차 <a target="_blank" href="doc/guide.html"><i class="fas fa-question-circle"></i></a></li>
+            <li>서버 비용 무료 / HTTPS 무료 적용 <a target="_blank" href="doc/guide.html"><i class="fas fa-question-circle"></i></a></li>
+            <li>뉴스레터 발송을 위한 Subscribe 기능 </li>
+            <li>고객맞춤형 Form(메시지/예약 등) </li>
+            <li>구글, 네이버 등 검색 노출/최적화 작업</li>
+            <li>인스타그램 API 연동 / Youtube 삽입 </li>
+            <li>오픈 그래프/파비콘 제작 <a target="_blank" href="doc/guide.html"><i class="fas fa-question-circle"></i></a>
+            </li>
+            <li>구글 지도 API & Analytics 통계 시스템 적용</li>
+            <!-- <s style="font-size:18px;margin:10px 0;color:silver">₩ 399,000</s> -->
+            <span style="font-size:30px;margin:10px 0"><sup>₩</sup> 359,000</span>
+            <br><br>
+            <button onclick="pdOpenSample()" style="display:block;width:100%;">샘플보기</button>
+            <div class="pd-sample-layer" id="pdSample">
+                <div class="pd-sample">
+                    <h2>T e m p l a t e s</h2>
+                    <br>
+                    <a class="pd-close-sample" onclick="pdCloseSample()">&times;</a>
+                    <div class="pd-templates-list">
+                        <a href="templates/light/eBusiness/" target="_blank" rel="noopener noreferrer"># 회사 홈페이지</a>
+                        <a href="templates/light/food/" target="_blank" rel="noopener noreferrer"># 레스토랑/카페</a>
+                        <a href="templates/light/Cleaning/" target="_blank" rel="noopener noreferrer"># 서비스 제공 업체 </a>
+                        <a href="templates/light/Edu/" target="_blank" rel="noopener noreferrer"># 교육/커뮤니티</a>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="inline-block">
+        <ul>
+            <h1 style="font-style:oblique">PRO</h1>
+            <p style="margin-bottom:25px;font-style: oblique;">대규모 웹 & 하이브리드 앱 개발 고객</p>
+
+            <li style="padding:150px 0">
+                <h1><i class="fas fa-otter" style="color:darkcyan"></i></h1>서비스 준비중입니다
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<!-- quick register form -->
+<div class="row" style="background:white">
+    <p style="color:deepskyblue">월 청구비용 ₩0, 최신 웹기술의 홈페이지</p>
+    <h1>딱 3단계 ! STANDARD 지금 신청하기</h1>
+    <br>
+
+    <div class="regist-form">
+        <div class="process">
+            <h2>하나, <a href="https://drive.google.com/file/d/1H3isuVkzmjGWXFDjRwNFzE8TL-P-JwNS/view?usp=sharing" target="_blank" rel="noopener noreferrer"><u style="color:grey">신청서</u></a>를 다운받아 확인하세요!</h2>
+            <br>
+            <a class="btn" href="mailto:podoit.kr@gmail.com" target="_blank">자료 보내기</a>
+        </div>
+            
+
+        <i class="fas fa-caret-down"></i>
+
+        <div class="process">
+            <h2>견적서를 보내드리며 결제 완료 후 작업이 시작됩니다!</h2>
+        </div>
+
+        <i class="fas fa-caret-down"></i>
+
+        <div class="process">
+            <h2>셋, 4-5일 후 완료되면 고객님에게 전달!</h2>
+        </div>
+            
+    </div>
+</div>
+
+
+<!-- google map and question form -->
+<br><br>
+<div class="row" id="pd-contact-us" style="background:white">
+    <div class="pd-map">
+        <iframe class="inline-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5923861461415!2d126.72353421548033!3d37.4939442360395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7c4e53f429fb%3A0x7419032b38ae5d00!2z7J247LKc6rSR7Jet7IucIOu2gO2Pieq1rCDrtoDtj4nrj5kg7Iuc7J6l66GcIDMz!5e0!3m2!1sko!2skr!4v1606194562076!5m2!1sko!2skr" 
+        height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        
+        <form class="inline-block" name="CONTACT" method="POST" data-netlify="true"  onsubmit="return confirm('전송하시겠습니까?')">
+            <h1>질문이 있습니까?</h1>
+            <p>빠른 시간 내에 답변받으실 수 있습니다</p>
+            <br>
+            <input type="text" name="name" placeholder="성 함" autofocus required>
+            <input type="email" name="email" placeholder="이메일" required>
+            <textarea name="message" placeholder="내용을 입력하세요" required></textarea>
+            <small style="color:grey">* 메시지를 전송할 경우 <a target="_blank" href="doc/policy.html">회사의 이용약관과 개인정보 처리방침</a>에 동의하는 것으로 간주됩니다</small>
+            <br>
+            <p style="text-align:center"><button><i class="fas fa-paper-plane"></i> 전송하기</button></p>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- row footer -->
+<div class="row footer">
+
+    <div class="inline-block">
+        <h3>포도IT</h3>
+        <p><b>Location</b>&nbsp; 인천광역시 부평구 시장로 33, 7층
+        <br>(부평동, 한남시티프라자)</p>
+        <p><b>Tel</b>&nbsp; 010 - 5110 - 6782</p>
+        <p><b>E-mail</b>&nbsp; podoit.kr@gmail.com</p>
+
+        <br>
+        <div class="pd-newsletter">
+            <h3>NEWSLETTER</h3>
+            <p>포도IT의 최신 소식을 가장 먼저 받아보세요!</p>
+            <form name="NEWSLETTER" method="POST" data-netlify="true">
+                <input type="email" name="email" placeholder="이메일을 입력하세요" required><br>
+                <br>
+                <button type="submit">구독하기</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="inline-block">
+        <h3>SHARE</h3>
+        <p>포도 IT가 맘에 드셨다면 친구들과 공유하세요!</p>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_inline_share_toolbox_xyk5"></div>
+        <br>
+        <h3>POLICY</h3>
+        <p><a href="doc/policy.html" target="_blank" rel="noopener noreferrer">이용약관</a></p>
+        <p><a href="doc/policy.html" target="_blank" rel="noopener noreferrer">개인정보 처리방침</a></p>
+
+    </div>
+
+    <div class="inline-block policy">
+       
+        <h3>INSTAGRAM</h3>
+        <br>
+        <div id="myInstagram" class="instagram"></div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer><small id="copyright"></small></footer>
+
+<script src="js/instagram.js"></script>
+<script src="js/bg-slide.js"></script>
+
+<!-- footer year updater -->
+<script>
+    var n = new Date();
+    var y = n.getFullYear();
+    document.getElementById("copyright").innerHTML = y + " © PODO-IT";
+</script>
+
+
+<!-- navigation when scroll down -->
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos || 50 > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+
+<!-- sample list view -->
+<script>
+    function pdOpenSample() {
+        document.getElementById("pdSample").style.display = "block"
+    }
+    function pdCloseSample() {
+        document.getElementById("pdSample").style.display = "none"
+    }
+</script>
+
+<!-- netlify form  -->
+<script>
+    document.querySelector("form").addEventListener("submit", handleSubmit);
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.getElementById('pizzaOrder');
+  let formData = new FormData(myForm)
+  fetch('/', { 
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => console.log('Form successfully submitted')).catch((error) =>
+    alert(error))
+}
+</script>
+
+</body>
+</html>

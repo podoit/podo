@@ -1,0 +1,125 @@
+/* Overall layout */
+* {padding:0;margin:0;box-sizing: border-box;}
+html {scroll-behavior:smooth;}
+body {font-size:14px;font-family: 'Noto Sans KR', sans-serif;background:whitesmoke}
+a {text-decoration:none;color:black}
+h1,h2 {font-weight: normal;}
+h1,h2,h3 {margin:5px 0}
+p {margin:5px 0;line-height:25px}
+small {margin:5px 0;display:block}
+hr {border:none;border-bottom:1px solid}
+.border-divider {width:50px;margin:0 auto;border:5px solid silver;border-radius: 5px;}
+.row {text-align:center;padding:50px 0}
+.divider {padding-bottom:25px}
+.inline-block {display:inline-block;vertical-align: top;padding:25px;}
+.max-width-1200 {max-width:1200px;margin:0 auto}
+
+input, textarea {width:100%;padding:10px;margin-top:10px;;border:1px solid #ddd;}
+textarea {height:200px}
+button, .btn {border:1px solid;outline:none;background:none;
+opacity:0.5;display:inline-block;padding:10px 13px;border-radius: 5px;cursor:pointer}
+button:hover, .btn:hover {opacity:1;transition:0.5s}
+button {font-size:15px}
+
+
+/* Fontawesome */
+.fa-check {color:silver;margin-right:2.5px}
+.fa-search-dollar, .fa-palette {margin-top:10%}
+.fa-search-dollar {color:lightgreen}
+.fa-palette {color:tomato}
+.fa-caret-down {font-size:50px;color:#ddd;}
+
+
+/* Navigation */
+nav {background:none;width:100%;text-align:center;padding:10px;z-index:3;position:absolute;top:0;
+border-bottom:1px solid #ddd}
+nav div {max-width:1200px;margin:0 auto}
+nav a {width:24%;display:inline-block;font-weight:bold;text-align:center;color:white}
+nav a:hover {background:rgba(0,0,0,0.1)}
+.podo-call {display:none}
+
+
+/* About */
+.pd-about {padding:25px 0;background:white}
+.pd-about img {width:250px;margin:25px;vertical-align: bottom;}
+.pd-about div {max-width:800px;text-align:left}
+
+
+/* Boss says */
+.pd-boss {background:white;}
+.pd-boss img {width:150px;border-radius: 50%;filter:grayscale(50%);margin-top:25px}
+.pd-boss .inline-block {max-width:700px;text-align:left;letter-spacing: 1px;}
+.pd-boss .inline-block p {color:grey}
+.pd-boss cite {font-size:14px}
+
+
+/* Our services */
+.pd-our-services,.pd-table {background:whitesmoke}
+.pd-our-services .max-width-1200 .inline-block 
+{max-width:350px;width:100%;height:250px;margin:15px;box-shadow:5px 10px 18px #888888;border-radius: 10px;
+background:white}
+.pd-our-services .max-width-1200 .inline-block:hover {transform: scale(1.05, 1.05);transition:.5s} 
+.pd-our-services .max-width-1200 .inline-block div {width:100%;height:100px}
+.pd-our-services .max-width-1200 img {position:relative;top:50%;transform:translate(0, -50%)}
+
+
+/* pricing table */
+.pd-table .inline-block {width:100%;max-width:550px;padding:25px}
+.pd-table ul {list-style: none;padding:7.5% 10%;background:white;border-radius: 25px;box-shadow:5px 10px 18px #888888}
+.pd-table ul li {padding:10px;border-top:1px solid #ebebeb;}
+
+.pd-sample-layer {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);padding:25px;
+display:none;z-index:1}
+.pd-sample {max-width:500px;background:white;position:relative;top:50%;left:50%;
+transform:translate(-50%,-50%);padding:25px;border-radius: 10px;}
+
+.pd-templates-list a {display:block;margin-top:5px;padding:10px;transition:0.5s;}
+.pd-close-sample {position: absolute;top:0;left:0;padding:25px;cursor:pointer;}
+.pd-templates-list a:hover {background:whitesmoke}
+.pd-contact-us .inline-block {width:300px;}
+.pd-contact-us .inline-block a:hover {color:silver}
+.pd-contact-us hr {border:1px solid; width:20px;margin:5px auto;}
+
+
+/* Standard register process */
+.regist-form {max-width:1000px;margin:0 auto;padding:25px}
+.process {padding:25px;border:2px dashed #ddd;border-radius: 25px}
+.process:hover {border:2px solid deepskyblue}
+
+
+/* Contact */
+.pd-map iframe {max-width:700px;width:100%;padding:25px}
+.pd-map form {width:100%;max-width:600px;padding:0;padding:25px;text-align:left}
+
+
+/* Footer */
+.footer {padding:100px 0;background:whitesmoke;border:none;}
+.footer .inline-block {width:100%;max-width:400px;text-align:left}
+.footer p {color:dimgrey;font-size:13px}
+.footer p a {color:dimgrey}
+.footer small {display:block}
+footer {text-align:center;padding:15px 0;background:whitesmoke;border-top:1px solid #ddd}
+
+.pd-newsletter form {position: relative;}
+.pd-newsletter input {width:75%}
+
+.instagram div {display:inline-block;width:110px;height:80px;overflow: hidden;margin:1px;vertical-align: middle;}
+.instagram img {width:100%;opacity:1}
+.instagram img:hover {opacity:.8;transition:.5s}
+
+
+/* Youtube video */
+.youtube-container h1 {color:white}
+.youtube-container {background:black}
+.youtube {width:100%;max-width:800px;padding:25px;display:inline-block;}
+.embed-youtube {position: relative; width: 100%; height: 0; padding-bottom: 56.25%;}
+.embed-youtube iframe {position: absolute; top: 0; left: 0; width: 100%;height: 100%;border-radius: 25px;}
+
+
+/* Responsive */
+@media(max-width:600px) {
+nav a {display:none}
+.podo-logo {display:block;width:100%}
+.podo-call:hover, .podo-logo:hover {background:none}
+.podo-call {display:block;position: absolute;top:0;left:0;padding:10px 20px;width:auto}
+}
