@@ -31,11 +31,10 @@ button {font-size:15px}
 
 
 /* Navigation */
-nav {background:none;width:100%;text-align:center;padding:10px;z-index:3;position:absolute;top:0;
-border-bottom:1px solid #ddd}
+nav {width:100%;text-align:center;padding:10px;z-index:3;background:white;}
 nav div {max-width:1200px;margin:0 auto}
-nav a {width:24%;display:inline-block;font-weight:bold;text-align:center;color:white}
-nav a:hover {background:rgba(0,0,0,0.1)}
+nav a {width:24%;display:inline-block;font-weight:bold;text-align:center;}
+nav a:hover {background:whitesmoke}
 .podo-call {display:none}
 
 
@@ -123,3 +122,35 @@ nav a {display:none}
 .podo-call:hover, .podo-logo:hover {background:none}
 .podo-call {display:block;position: absolute;top:0;left:0;padding:10px 20px;width:auto}
 }
+
+
+/* main slide show */
+.bg-wrap {position:relative;height:600px}
+.bg-image {
+    background-size:cover;
+    background-position:center;
+    height:100%;
+    opacity:0;transition:1s ease-in-out;
+    position:absolute;top:0;left:0;width:100%;
+}
+.showing {opacity:1;}
+
+.prev, .next {position:absolute;top:50%;transform: translate(0,-50%);background:white;padding:10px;
+cursor:pointer}
+.prev {left:0}
+.next {right:0}
+
+.dots {position: absolute;bottom:5%;left:50%;transform: translate(-50%,0);}
+
+.dot {height: 15px;width: 15px;margin: 0 2px;background: whitesmoke;
+border-radius: 50%;display: inline-block;transition:background-color 0.6s ease;}
+
+.active {background:grey;}
+
+.podo-subject {position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
+color:whitesmoke;}
+.podo-subject .btn {color:white;opacity:1}
+.podo-subject .btn:hover {opacity:.8}
+
+.podo-logo-image {width:100px;}
+.podo-logo img {position:absolute;top:0;left:0}

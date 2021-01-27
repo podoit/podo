@@ -54,44 +54,6 @@
 </head>
 <body>
 
-    <style>
-    .bg-image {
-    background-image:url('img/city-nightview.jpg');
-    background-size:cover;
-    background-position:center;
-    height:600px;
-    position: relative;
-    }
-
-    .podo-subject {position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
-    color:white}
-    .podo-subject .btn {color:white;opacity:1}
-    .podo-subject .btn:hover {opacity:.8}
-
-    .podo-logo-image {width:100px;}
-    .podo-logo img {position:absolute;top:0;left:0}
-    </style>
-
-
-
-
-
-<div class="bg-image">
-    <div class="podo-subject">
-        <h1 style="font-size:30px">최신 웹기술에 기반한 IT스타트업, <img class="podo-logo-image" src="img/PODO.png" alt="">입니다</h1>
-        <p style="font-size:16px" id="demo"></p>
-        <br>
-        <!-- <a class="btn" href="https://drive.google.com/file/d/1H3isuVkzmjGWXFDjRwNFzE8TL-P-JwNS/view?usp=sharing" target="_blank" rel="noopener noreferrer">신청서 다운로드</a> -->
-    </div>
-</div>
-
-<script>
-    var myTimer = setInterval(myClock, 1000);
-    function myClock() {
-      document.getElementById("demo").innerHTML = new Date().toLocaleTimeString();
-    }
-</script>
-
 <!-- navigation -->
 <nav id="navbar">
     <div class="">
@@ -103,7 +65,25 @@
     </div>
 </nav>
 
+<div class="bg-wrap">
+    <div class="bg-image" style="background-image:url('img/meeting.jpg')"></div>
+    <div class="bg-image" style="background-image:url('img/coding.png')"></div>
+    <div class="bg-image" style="background-image:url('img/city-nightview.jpg')"></div>
 
+    <div class="podo-subject">
+        <h1 style="font-size:30px">최신 웹기술에 기반한 IT스타트업, <img class="podo-logo-image" src="img/PODO.png" alt="">입니다</h1>
+        <p style="font-size:16px" id="demo"></p>
+        <br>
+        <!-- <a class="btn" href="https://drive.google.com/file/d/1H3isuVkzmjGWXFDjRwNFzE8TL-P-JwNS/view?usp=sharing" target="_blank" rel="noopener noreferrer">신청서 다운로드</a> -->
+    </div>
+    
+
+    <div class="dots">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+</div>
 
 <!-- about -->
 <div class="row pd-about" id="pd-about">
@@ -359,6 +339,9 @@
 <!-- footer -->
 <footer><small id="copyright"></small></footer>
 
+
+<!-- script -->
+<script>includeHTML()</script>
 <script src="js/instagram.js"></script>
 <script src="js/bg-slide.js"></script>
 
@@ -410,6 +393,43 @@ const handleSubmit = (e) => {
     alert(error))
 }
 </script>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("bg-image");
+        var dots = document.getElementsByClassName("dot");
+        
+        slideIndex++;
+    
+        if (slideIndex > slides.length) {slideIndex = 1}    
+    
+        for (i = 0; i < slides.length; i++) {
+        slides[i].className = slides[i].className.replace(" showing", "");
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+    
+        slides[slideIndex-1].className += " showing";
+        dots[slideIndex-1].className += " active";
+    
+        setTimeout(showSlides, 8000);
+    }
+</script>
+
+
+<script>
+    var myTimer = setInterval(myClock, 1000);
+    function myClock() {
+      document.getElementById("demo").innerHTML = new Date().toLocaleTimeString();
+    }
+</script>
+
+
 
 </body>
 </html>
