@@ -321,9 +321,8 @@
 
     <div class="inline-block policy">
        
-        <h3>INSTAGRAM</h3>
-        <br>
-        <div id="myInstagram" class="instagram"></div>
+        <h3>INSTAGRAM</h3><br>
+        <div id="myInstagram" class="float-container"></div>
     </div>
 </div>
 
@@ -334,28 +333,27 @@
 <!-- script -->
 <script>includeHTML()</script>
 <script src="js/instagram.js"></script>
-<script src="js/bg-slide.js"></script>
 
 <!-- footer year updater -->
 <script>
-    var n = new Date();
-    var y = n.getFullYear();
-    document.getElementById("copyright").innerHTML = y + " © PODO-IT";
+  var n = new Date();
+  var y = n.getFullYear();
+  document.getElementById("copyright").innerHTML = y + " © PODO-IT";
 </script>
 
 
 <!-- navigation when scroll down -->
 <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos || 50 > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-50px";
-      }
-      prevScrollpos = currentScrollPos;
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos || 50 > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
     }
+    prevScrollpos = currentScrollPos;
+  }
 </script>
 
 <!-- sample list view -->
@@ -390,25 +388,23 @@ const handleSubmit = (e) => {
     showSlides();
     
     function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("bg-image");
-        var dots = document.getElementsByClassName("dot");
-        
-        slideIndex++;
-    
-        if (slideIndex > slides.length) {slideIndex = 1}    
-    
-        for (i = 0; i < slides.length; i++) {
+      var i;
+      var slides = document.getElementsByClassName("bg-image");
+      var dots = document.getElementsByClassName("dot");
+
+      slideIndex++;
+
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < slides.length; i++) {
         slides[i].className = slides[i].className.replace(" showing", "");
-        }
-        for (i = 0; i < dots.length; i++) {
+      }
+      for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
-        }
-    
-        slides[slideIndex-1].className += " showing";
-        dots[slideIndex-1].className += " active";
-    
-        setTimeout(showSlides, 8000);
+      }
+
+      slides[slideIndex-1].className += " showing";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 8000);
     }
 </script>
 

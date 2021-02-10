@@ -82,7 +82,7 @@ transform:translate(-50%,-50%);padding:25px;border-radius: 10px;}
 
 /* Standard register process */
 .regist-form {max-width:1000px;margin:0 auto;padding:25px}
-.process {padding:25px;border:2px dashed #ddd;border-radius: 25px}
+.process {padding:25px;border:2px dashed #ddd;border-radius: 10px}
 .process:hover {border:2px solid deepskyblue}
 
 
@@ -92,8 +92,8 @@ transform:translate(-50%,-50%);padding:25px;border-radius: 10px;}
 
 
 /* Footer */
-.footer {padding:100px 0;background:whitesmoke;border:none;}
-.footer .inline-block {width:100%;max-width:400px;text-align:left}
+.footer {padding:100px 25px;background:whitesmoke;border:none;}
+.footer .inline-block {width:100%;max-width:400px;text-align:left;padding:0}
 .footer p {color:dimgrey;font-size:13px}
 .footer p a {color:dimgrey}
 .footer small {display:block}
@@ -102,10 +102,9 @@ footer {text-align:center;padding:15px 0;background:whitesmoke;border-top:1px so
 .pd-newsletter form {position: relative;}
 .pd-newsletter input {width:75%}
 
-.instagram div {display:inline-block;width:110px;height:80px;overflow: hidden;margin:1px;vertical-align: middle;}
-.instagram img {width:100%;opacity:1}
-.instagram img:hover {opacity:.8;transition:.5s}
-
+.float-container::after {display:block;content:"";clear:both}
+.post {background-size:cover; width:130px;height:100px; background-position:center; float:left;margin:1px;transition:.5s}
+.post:hover {opacity:.8}
 
 /* Youtube video */
 .youtube-container h1 {color:white}
