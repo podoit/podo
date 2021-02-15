@@ -8,7 +8,7 @@ xhttp.onreadystatechange = function() {
 
     for(i=0;i<6;i++) {
       if(obj.data[i].media_type == "VIDEO") {
-        obj.data[i].media_url = obj.data[i].thumbnail_url
+        obj.data[i].media_url = obj.data[i].thumbnail_url;
       }
       document.getElementById("myInstagram").innerHTML +=  
       "<a href='" + obj.data[i].permalink + "' target='_blank' rel='noopener noreferrer'>"
