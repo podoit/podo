@@ -83,8 +83,8 @@ background:white;transition:.5s}
 .pd-our-services .max-width-1200 img {position:relative;top:50%;transform:translate(0, -50%)}
 
 /* pricing table */
-.pd-table .inline-block {width:100%;max-width:550px;padding:25px}
-.pd-table ul {list-style: none;padding:7.5% 10%;background:white;border-radius: 25px;border:1px solid #ddd;transition:.5s}
+.pd-table .inline-block {width:100%;max-width:500px;padding:25px}
+.pd-table ul {list-style: none;padding:5% 7.5%;background:white;border-radius: 25px;border:1px solid #ddd;transition:.5s}
 .pd-table ul:hover {box-shadow:0 0 6px silver}
 .pd-table ul li {padding:10px;border-top:1px solid #ebebeb;}
 
